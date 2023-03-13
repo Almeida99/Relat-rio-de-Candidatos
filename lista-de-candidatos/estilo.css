@@ -1,0 +1,95 @@
+
+body { height: 100vh ; width: 100%; background-image:url('img/fundo4.jpeg') ;  background-size:auto; background-repeat: round; overflow-y:auto; padding: 1px 1px; margin: 1px 1px;
+}
+
+
+.container-fluid { 
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.658);
+        color: #020202;
+        overflow-y: auto;
+        padding: 20px;
+}
+
+
+
+
+label {
+    color: #000000;
+    font-weight: bold;
+    font: 15px;
+
+
+  }
+  input[type=submit] {
+        width: 30%;
+        background-color: #faec28;
+        color: black;
+        padding: 10px 20px;
+        margin: 10px 10px;
+        border: none;
+        border-radius:100px;
+        cursor: pointer;
+        font-weight:bold;
+        text-transform: uppercase;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 1.0rem;
+
+        
+      }
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      a.button{
+        background: transparent url('http://kithomepage.com/sos/gray-left.gif') no-repeat top left;
+        display: block;
+        float: left;
+        font: normal 25px Arial; 
+        line-height: 25px; 
+        height: 30px; 
+        padding-left: 9px;
+        text-decoration: none;
+        }
+        
+        a:link.button, a:visited.button, a:active.button{
+        color: #0269f9; /*cor do texto do botão*/
+        }
+        
+        a.button span{
+        background: transparent url('http://kithomepage.com/sos/gray-right.gif') no-repeat top right;
+        display: block;
+        padding: 4px 9px 4px 0;
+        }
+.row{
+  margin-top: -0.25rem !important;
+}
+.objetivo{
+  width: 100%;
+  color: #212529;;
+}
+.endereco{
+  width: 100%;
+  color: #212529;;
+}
+.titulo{
+  color: #000000;
+}
+.contador{
+  color: #000000;
+  text-align: right;
+  font-size:8px;
+  font-weight:bold;
+  word-break: break-all;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.0rem;
+}
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('img/loader.gif') 50% 50% no-repeat #ebf0f1;
+}
