@@ -399,7 +399,7 @@ echo"<p class='contador'>Pag: $pag_count/$total_pag
 
 $id_cad = $id;
 $contador = 1;
-$query_usuarios2 = "SELECT cad_cv_id,cad_cd_nome_empresa,cad_dt_adimissao,cad_dt_demissao,cad_cargo_ant,cad_motivo_demissao  from cad_emp ce  where cad_cv_id  = $id_cad  ORDER BY cad_cv_id DESC LIMIT 5";
+$query_usuarios2 = "SELECT cad_cv_id,cad_cd_nome_empresa,cad_dt_admissao,cad_dt_demissao,cad_cargo_ant,cad_motivo_demissao  from cad_emp ce  where cad_cv_id  = $id_cad  ORDER BY cad_cv_id DESC LIMIT 5";
 $result_usuarios2 = $conn->prepare($query_usuarios2);
 $result_usuarios2->execute();
 if (($result_usuarios2) AND ($result_usuarios2->rowCount() != 0)) {
@@ -417,7 +417,7 @@ if (($result_usuarios2) AND ($result_usuarios2->rowCount() != 0)) {
   while ($row_usuario2 = $result_usuarios2->fetch(PDO::FETCH_ASSOC)) {
     extract($row_usuario2);
     $emp = $row_usuario2['cad_cd_nome_empresa'];
-    $dt_admissao = $row_usuario2['cad_dt_adimissao'];
+    $dt_admissao = $row_usuario2['cad_dt_admissao'];
     $dt_demissao = $row_usuario2['cad_dt_demissao'];
     $cad_cargo = $row_usuario2['cad_cargo_ant'];
     $motivo = $row_usuario2['cad_motivo_demissao'];
@@ -448,7 +448,7 @@ if (($result_usuarios2) AND ($result_usuarios2->rowCount() != 0)) {
     </div>
     </div>
     <div class="row">
-    <label class="col-sm-2 fs-6  pb-2 col-form-label col-form-label-lg">Adimissão</label>
+    <label class="col-sm-2 fs-6  pb-2 col-form-label col-form-label-lg">Admissão</label>
     <div class="col-sm">
     <input disabled class="form-control form-control-sm text-uppercase "  name="telefone2" value="<?php echo (new \DateTimeImmutable($dt_admissao))->format('d/m/Y');?>" type="text"  >
     </div>
